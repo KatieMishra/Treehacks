@@ -48,11 +48,5 @@
 	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Allos you to change profile pic</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>KGWhattheTeacherWants.ttf</string>
-	</array>
 </dict>
 </plist>

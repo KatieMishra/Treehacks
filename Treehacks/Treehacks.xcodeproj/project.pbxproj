@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		018E616EC2D0E7BCF3A94F99 /* Pods_Treehacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CEFBD7C1337816CC91CFFE /* Pods_Treehacks.framework */; };
-		15E3DE21F63355E6A0FCD93B /* Pods_TreehacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA63AA82A44DDE748899595 /* Pods_TreehacksUITests.framework */; };
-		3D4791C785CA9D07C7739EC4 /* Pods_TreehacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23727CD4E031A7275BECD5E4 /* Pods_TreehacksTests.framework */; };
+		485B13E030E97A9EEBFB6772 /* Pods_TreehacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CED7446C50BE29DA9B4B22D /* Pods_TreehacksUITests.framework */; };
+		5ABBAC5A4D2F350B519B1D40 /* Pods_TreehacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC5D1ECD57F8049BF53DE63 /* Pods_TreehacksTests.framework */; };
+		5C72DB7ED16C5BFFD154FCE6 /* Pods_Treehacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AF163CF4A9159D88A2FEA0 /* Pods_Treehacks.framework */; };
 		ADD6FE1022189E1D00139967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6FE0F22189E1D00139967 /* AppDelegate.swift */; };
 		ADD6FE1222189E1D00139967 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6FE1122189E1D00139967 /* SignUpViewController.swift */; };
 		ADD6FE1422189E1D00139967 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6FE1322189E1D00139967 /* HomeViewController.swift */; };
 		ADD6FE1722189E1D00139967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD6FE1522189E1D00139967 /* Main.storyboard */; };
-		ADD6FE1922189E1E00139967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD6FE1822189E1E00139967 /* Assets.xcassets */; };
 		ADD6FE1C22189E1E00139967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD6FE1A22189E1E00139967 /* LaunchScreen.storyboard */; };
 		ADD6FE2722189E1E00139967 /* TreehacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6FE2622189E1E00139967 /* TreehacksTests.swift */; };
 		ADD6FE3222189E1E00139967 /* TreehacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6FE3122189E1E00139967 /* TreehacksUITests.swift */; };
@@ -22,6 +21,9 @@
 		ADD6FE4222189F0200139967 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6FE4122189F0200139967 /* ResetPasswordViewController.swift */; };
 		ADD6FE4422189F6500139967 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADD6FE4322189F6500139967 /* GoogleService-Info.plist */; };
 		FC2A17272218AE8900B4C506 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2A17262218AE8900B4C506 /* RankViewController.swift */; };
+		FC8913AB22194EAF00687E41 /* KGWhattheTeacherWants.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC8913AA22194EAF00687E41 /* KGWhattheTeacherWants.ttf */; };
+		FC8913B12219549700687E41 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC8913B02219549700687E41 /* Info.plist */; };
+		FCDA21C722198B0C00DCFAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDA21C622198B0B00DCFAC4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,19 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09AF163CF4A9159D88A2FEA0 /* Pods_Treehacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Treehacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA31E9E521A2FB6AFAF4504 /* Pods-Treehacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treehacks.debug.xcconfig"; path = "Target Support Files/Pods-Treehacks/Pods-Treehacks.debug.xcconfig"; sourceTree = "<group>"; };
-		23727CD4E031A7275BECD5E4 /* Pods_TreehacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreehacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC5D1ECD57F8049BF53DE63 /* Pods_TreehacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreehacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CED7446C50BE29DA9B4B22D /* Pods_TreehacksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreehacksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFE3E896597536E545AD754 /* Pods-TreehacksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreehacksUITests.debug.xcconfig"; path = "Target Support Files/Pods-TreehacksUITests/Pods-TreehacksUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		60CEFBD7C1337816CC91CFFE /* Pods_Treehacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Treehacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E43B16EC66C98668930B8A /* Pods-Treehacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treehacks.release.xcconfig"; path = "Target Support Files/Pods-Treehacks/Pods-Treehacks.release.xcconfig"; sourceTree = "<group>"; };
 		ADD6FE0C22189E1D00139967 /* Treehacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treehacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD6FE0F22189E1D00139967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD6FE1122189E1D00139967 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ADD6FE1322189E1D00139967 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ADD6FE1622189E1D00139967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ADD6FE1822189E1E00139967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD6FE1B22189E1E00139967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ADD6FE1D22189E1E00139967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD6FE2222189E1E00139967 /* TreehacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreehacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD6FE2622189E1E00139967 /* TreehacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreehacksTests.swift; sourceTree = "<group>"; };
 		ADD6FE2822189E1E00139967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,9 +67,11 @@
 		ADD6FE4322189F6500139967 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7D1CE016A708A93A2A89609 /* Pods-TreehacksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreehacksUITests.release.xcconfig"; path = "Target Support Files/Pods-TreehacksUITests/Pods-TreehacksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E28DBDD38108CAD172756DCB /* Pods-TreehacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreehacksTests.debug.xcconfig"; path = "Target Support Files/Pods-TreehacksTests/Pods-TreehacksTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EEA63AA82A44DDE748899595 /* Pods_TreehacksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreehacksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB191E41FFD22AFDDA6788CE /* Pods-TreehacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreehacksTests.release.xcconfig"; path = "Target Support Files/Pods-TreehacksTests/Pods-TreehacksTests.release.xcconfig"; sourceTree = "<group>"; };
 		FC2A17262218AE8900B4C506 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		FC8913AA22194EAF00687E41 /* KGWhattheTeacherWants.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGWhattheTeacherWants.ttf; sourceTree = "<group>"; };
+		FC8913B02219549700687E41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDA21C622198B0B00DCFAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				018E616EC2D0E7BCF3A94F99 /* Pods_Treehacks.framework in Frameworks */,
+				5C72DB7ED16C5BFFD154FCE6 /* Pods_Treehacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4791C785CA9D07C7739EC4 /* Pods_TreehacksTests.framework in Frameworks */,
+				5ABBAC5A4D2F350B519B1D40 /* Pods_TreehacksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E3DE21F63355E6A0FCD93B /* Pods_TreehacksUITests.framework in Frameworks */,
+				485B13E030E97A9EEBFB6772 /* Pods_TreehacksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,9 +105,9 @@
 		8E7A16E486CF2EBAC748CAB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60CEFBD7C1337816CC91CFFE /* Pods_Treehacks.framework */,
-				23727CD4E031A7275BECD5E4 /* Pods_TreehacksTests.framework */,
-				EEA63AA82A44DDE748899595 /* Pods_TreehacksUITests.framework */,
+				09AF163CF4A9159D88A2FEA0 /* Pods_Treehacks.framework */,
+				1CC5D1ECD57F8049BF53DE63 /* Pods_TreehacksTests.framework */,
+				1CED7446C50BE29DA9B4B22D /* Pods_TreehacksUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,9 +155,10 @@
 				ADD6FE1322189E1D00139967 /* HomeViewController.swift */,
 				FC2A17262218AE8900B4C506 /* RankViewController.swift */,
 				ADD6FE1522189E1D00139967 /* Main.storyboard */,
-				ADD6FE1822189E1E00139967 /* Assets.xcassets */,
+				FCDA21C622198B0B00DCFAC4 /* Assets.xcassets */,
+				FC8913B02219549700687E41 /* Info.plist */,
 				ADD6FE1A22189E1E00139967 /* LaunchScreen.storyboard */,
-				ADD6FE1D22189E1E00139967 /* Info.plist */,
+				FC8913AA22194EAF00687E41 /* KGWhattheTeacherWants.ttf */,
 				ADD6FE3F22189EED00139967 /* LoginViewController.swift */,
 				ADD6FE4322189F6500139967 /* GoogleService-Info.plist */,
 				ADD6FE4122189F0200139967 /* ResetPasswordViewController.swift */,
@@ -165,8 +169,8 @@
 		ADD6FE2522189E1E00139967 /* TreehacksTests */ = {
 			isa = PBXGroup;
 			children = (
-				ADD6FE2622189E1E00139967 /* TreehacksTests.swift */,
 				ADD6FE2822189E1E00139967 /* Info.plist */,
+				ADD6FE2622189E1E00139967 /* TreehacksTests.swift */,
 			);
 			path = TreehacksTests;
 			sourceTree = "<group>";
@@ -289,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD6FE1C22189E1E00139967 /* LaunchScreen.storyboard in Resources */,
-				ADD6FE1922189E1E00139967 /* Assets.xcassets in Resources */,
+				FC8913AB22194EAF00687E41 /* KGWhattheTeacherWants.ttf in Resources */,
+				FC8913B12219549700687E41 /* Info.plist in Resources */,
 				ADD6FE1722189E1D00139967 /* Main.storyboard in Resources */,
+				FCDA21C722198B0C00DCFAC4 /* Assets.xcassets in Resources */,
 				ADD6FE4422189F6500139967 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
