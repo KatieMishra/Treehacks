@@ -1,8 +1,17 @@
+from __future__ import print_function
 from flask import Flask, render_template, request, redirect, make_response
 import requests
 import sqlite3
 import pyrebase
 from twilio.rest import Client
+import json
+import os
+from dotenv import load_dotenv, find_dotenv
+from watson_developer_cloud import ConversationV1
+from watson_developer_cloud import ToneAnalyzerV3
+
+# import tone detection
+import tone_detection
 
 config = {
     "apiKey": "AIzaSyCaY4mqwMRYMY9HdgBJ8yuo63SLDXtuE4c",
@@ -82,24 +91,40 @@ def sendText():
 	return render_template('home.html', coins=0)
 
 
+@app.route('/get-sentiment')
+def getSentiment():
+	# message = request.args.get('messagingSenderId')
+	load_dotenv(find_dotenv())
+	conversation = ConversationV1(
+	    username=os.environ.get('CONVERSATION_USERNAME') or 'YOUR SERVICE NAME',
+	    password=os.environ.get('CONVERSATION_PASSWORD') or 'YOUR PASSWORD',
+	    version='2016-09-20')
+	tone_analyzer = ToneAnalyzerV3(
+	    username=os.environ.get('TONE_ANALYZER_USERNAME') or 'YOUR SERVICE NAME',
+	    password=os.environ.get('TONE_ANALYZER_PASSWORD') or 'YOUR SERVICE NAME',
+	    version='2016-02-11')
+	
+	workspace_id = os.environ.get('WORKSPACE_ID') or 'YOUR WORKSPACE ID'
+	
+	global_maintainToneHistoryInContext = True
+	
+	global_payload = {
+	    'workspace_id': workspace_id,
+	    'input': {
+	        'text': 'I am happy'
+	    }
+	}
+	def invokeToneConversation(payload, maintainToneHistoryInContext):
+	    tone = tone_analyzer.tone(tone_input=payload['input']['text'], content_type='application/json').get_result()
+	    conversation_payload = tone_detection.\
+	        updateUserTone(payload, tone, maintainToneHistoryInContext)
+	    response = conversation.message(workspace_id=workspace_id,
+	                                    input=conversation_payload['input'],
+	                                    context=conversation_payload['context']).get_result()
+	    print(json.dumps(response, indent=2))
+	invokeToneConversation(global_payload, global_maintainToneHistoryInContext)
 
-# @app.route('/get-quote')
-# def quote():
-# 	response = requests.get(base_url).json()
-# 	return render_template('random_quote.html', quote=response)
-
-
-
-# @app.route('/save-quote')
-# def save():
-# 	conn = sqlite3.connect('database.db')
-# 	c = conn.cursor()
-# 	quote = request.args.get('quote')
-# 	author = request.args.get('author')
-# 	c.execute('''insert into quotes values(null, "''' + request.cookies.get('username', default='null', type=str) + '''", "'''+ quote +'''", "'''+ author +'''")''')
-# 	conn.commit()
-# 	conn.close()
-# 	return home()
+	return render_template('home.html', coins=0)
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0")
